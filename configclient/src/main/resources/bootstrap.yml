@@ -1,9 +1,9 @@
 # By default, Config Server connects to http://localhost:8888 with env=default and label=master
 spring:
   application:
-    name: foo # e.g. apiSocial
+    name: foo # apiSocial
   cloud:
     config:
-      env: default # optional; e.g. prod3
-      label: master # optional; git branch; e.g. 1.0.3
-      uri: http://localhost:8888 # optional; e.g. http://dev.config.domo.com/
+      env: development # e.g. prod3
+      label: master # git branch; e.g. 1.0.3
+      uri: http://localhost:8889 # config server address; e.g. http://dev.config.domo.com/
