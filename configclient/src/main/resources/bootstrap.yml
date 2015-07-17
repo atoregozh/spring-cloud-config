@@ -2,8 +2,10 @@
 spring:
   application:
     name: foo # apiSocial
+  profiles:
+    active: prod,development
   cloud:
     config:
-      env: development # e.g. prod3
+      env: prod # e.g. prod3 DOESN'T DO ANYTHING! Why? only spring:profiles:active seem to work
       label: master # git branch; e.g. 1.0.3
       uri: http://localhost:8889 # config server address; e.g. http://dev.config.domo.com/
