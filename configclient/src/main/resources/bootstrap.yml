@@ -6,6 +6,6 @@ spring:
     active: development
   cloud:
     config:
-      env: prod # e.g. prod3 DOESN'T DO ANYTHING! Why? only spring:profiles:active seem to work
+      env: prod # DOESN'T DO ANYTHING! Why? only spring:profiles:active seem to change envs
       label: master # git branch; e.g. 1.0.3
       uri: http://localhost:8889 # config server address; e.g. http://dev.config.domo.com/
