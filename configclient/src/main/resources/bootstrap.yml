@@ -3,7 +3,7 @@ spring:
   application:
     name: foo # apiSocial
   profiles:
-    active: prod,development
+    active: development
   cloud:
     config:
       env: prod # e.g. prod3 DOESN'T DO ANYTHING! Why? only spring:profiles:active seem to work
