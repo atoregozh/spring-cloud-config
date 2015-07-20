@@ -1,11 +1,11 @@
 # By default, Config Server connects to http://localhost:8888 with env=default and label=master
 spring:
   application:
-    name: foo # apiSocial
-  profiles:
-    active: development
+    name: foo # service name e.g. apiSocial
+#  profiles:
+#    active: development
   cloud:
     config:
-      env: prod # DOESN'T DO ANYTHING! Why? only spring:profiles:active seem to change envs
-      label: master # git branch; e.g. 1.0.3
+      profile: development # environment to activate; e.g. dev3
+      label: master # git branch related to build number; e.g. 1.0.3
       uri: http://localhost:8889 # config server address; e.g. http://dev.config.domo.com/
